@@ -21,6 +21,7 @@
 #include <Windows.h>
 #include <conio.h>
 #undef max
+#undef min
 #else
 #include <curses.h>
 #endif
@@ -49,6 +50,7 @@ void GotoXY(short x, short y) {
 int ReadKey() {
     return _getch();
 }
+#define ERR 0
 
 #define HIGHLIGHT_COLOR 1
 
